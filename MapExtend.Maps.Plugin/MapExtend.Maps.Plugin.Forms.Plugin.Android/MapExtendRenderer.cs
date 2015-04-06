@@ -6,6 +6,7 @@ using Xamarin.Forms.Maps.Android;
 using Xamarin.Forms.Maps;
 using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
+using Android.App;
 
 
 [assembly: ExportRenderer(typeof(Xamarin.Forms.MapExtend.Abstractions.MapExtend), typeof(Xamarin.Forms.MapExtend.Droid.MapExtendRenderer))]
@@ -19,7 +20,9 @@ namespace Xamarin.Forms.MapExtend.Droid
         /// <summary>
         /// Used for registration with dependency service
         /// </summary>
-        public static void Init() { }
+        public static void Init(Activity activity, Android.OS.Bundle bundle) {
+            FormsMaps.Init(activity, bundle);
+        }
 
         protected override void OnElementChanged(Xamarin.Forms.Platform.Android.ElementChangedEventArgs<View> e)
         {

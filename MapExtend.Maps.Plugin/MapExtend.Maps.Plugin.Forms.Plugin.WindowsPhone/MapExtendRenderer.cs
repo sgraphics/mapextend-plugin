@@ -19,7 +19,10 @@ namespace Xamarin.Forms.MapExtend.WinPhone
         /// <summary>
         /// Used for registration with dependency service
         /// </summary>
-        public static void Init() { }
+        public static void Init(string appID, string authToken)
+        {
+            FormsMaps.Init(appID, authToken);
+        }
 
         protected override void OnElementChanged(Platform.WinPhone.ElementChangedEventArgs<Maps.Map> e)
         {
