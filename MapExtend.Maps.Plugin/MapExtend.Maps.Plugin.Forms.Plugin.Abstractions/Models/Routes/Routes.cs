@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Xamarin.Forms.MapExtend.Abstractions.Models.Routes
+namespace Xam.Plugin.MapExtend.Abstractions.Models.Routes
 {
     public class Rootobject
     {

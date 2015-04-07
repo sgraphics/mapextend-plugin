@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
-using Xamarin.Forms.MapExtend.Abstractions.Models;
-using Xamarin.Forms.MapExtend.Abstractions.Models.Places;
-using Xamarin.Forms.MapExtend.Abstractions.Models.Routes;
+using Xam.Plugin.MapExtend.Abstractions.Models;
+using Xam.Plugin.MapExtend.Abstractions.Models.Places;
+using Xam.Plugin.MapExtend.Abstractions.Models.Routes;
 using System;
 using System.Linq;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 
-namespace Xamarin.Forms.MapExtend.Abstractions
+namespace Xam.Plugin.MapExtend.Abstractions
 {
     /// <summary>
     /// MapExtend.Maps.Plugin Interface

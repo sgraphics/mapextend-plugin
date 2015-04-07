@@ -1,7 +1,7 @@
-﻿using Xamarin.Forms.MapExtend.Abstractions;
+﻿using Xam.Plugin.MapExtend.Abstractions;
 using System;
 using Xamarin.Forms;
-using Xamarin.Forms.MapExtend.iOSUnified;
+using Xam.Plugin.MapExtend.iOSUnified;
 using Xamarin.Forms.Maps.iOS;
 using Xamarin.Forms.Platform.iOS;
 using MapKit;
@@ -9,14 +9,15 @@ using System.Drawing;
 using Xamarin.Forms.Maps;
 using CoreLocation;
 using System.Collections.Generic;
+using Xamarin;
 
-[assembly: ExportRenderer(typeof(Xamarin.Forms.MapExtend.Abstractions.MapExtend), typeof(Xamarin.Forms.MapExtend.iOSUnified.MapExtendRenderer))]
-namespace Xamarin.Forms.MapExtend.iOSUnified
+[assembly: ExportRenderer(typeof(Xam.Plugin.MapExtend.Abstractions.MapExtend), typeof(Xam.Plugin.MapExtend.iOSUnified.MapExtendRenderer))]
+namespace Xam.Plugin.MapExtend.iOSUnified
 {
     /// <summary>
     /// MapExtend.Maps.Plugin Implementation
     /// </summary>
-    public class MapExtendRenderer : ViewRenderer<Xamarin.Forms.MapExtend.Abstractions.MapExtend, MKMapView>
+    public class MapExtendRenderer : ViewRenderer<Xam.Plugin.MapExtend.Abstractions.MapExtend, MKMapView>
     {
         /// <summary>
         /// Used for registration with dependency service
@@ -55,7 +56,7 @@ namespace Xamarin.Forms.MapExtend.iOSUnified
             try
             {
                 var mkMapView = Control;
-                var formsMap = (Xamarin.Forms.MapExtend.Abstractions.MapExtend)Element;
+                var formsMap = (Xam.Plugin.MapExtend.Abstractions.MapExtend)Element;
                 //androidMapView.Map.Clear();
                 List<CLLocationCoordinate2D> lineCords = new List<CLLocationCoordinate2D>();
                 if (formsMap.polilenes.Count > 0)
@@ -87,7 +88,7 @@ namespace Xamarin.Forms.MapExtend.iOSUnified
         private void updatePins()
         {
             var mkMapView = Control;
-            var formsMap = (Xamarin.Forms.MapExtend.Abstractions.MapExtend)Element;
+            var formsMap = (Xam.Plugin.MapExtend.Abstractions.MapExtend)Element;
 
 
             var items = formsMap.Pins;

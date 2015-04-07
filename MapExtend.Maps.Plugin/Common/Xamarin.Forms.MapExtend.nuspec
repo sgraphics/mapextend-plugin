@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
-       <id>Xamarin.Forms.MapExtend</id>
-       <version>1.5.0.0</version>
+       <id>Xam.Plugin.MapExtend</id>
+       <version>1.0.0.0</version>
        <title>MapExtend plugin for Xamarin.Forms</title>
        <authors>Rafael Rodrigues Moura</authors>
        <owners>Rafael Rodrigues Moura</owners>
@@ -28,39 +28,39 @@
    </metadata>
    <files>
      <!--Core-->
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.dll" target="lib\portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.MapExtend.Abstractions.dll" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.xml" target="lib\portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.MapExtend.Abstractions.xml" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.pdb" target="lib\portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.MapExtend.Abstractions.pdb" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xam.Plugin.MapExtend.Abstractions.dll" target="lib\portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xam.Plugin.MapExtend.Abstractions.dll" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xam.Plugin.MapExtend.Abstractions.xml" target="lib\portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xam.Plugin.MapExtend.Abstractions.xml" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xam.Plugin.MapExtend.Abstractions.pdb" target="lib\portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xam.Plugin.MapExtend.Abstractions.pdb" />
 
      <!--Win Phone-->
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.dll" target="lib\wp8\Xamarin.Forms.MapExtend.Abstractions.dll" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.xml" target="lib\wp8\Xamarin.Forms.MapExtend.Abstractions.xml" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.pdb" target="lib\wp8\Xamarin.Forms.MapExtend.Abstractions.pdb" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.WindowsPhone\bin\Release\Xamarin.Forms.MapExtend.WindowsPhone.dll" target="lib\wp8\Xamarin.Forms.MapExtend.WindowsPhone.dll" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.WindowsPhone\bin\Release\Xamarin.Forms.MapExtend.WindowsPhone.xml" target="lib\wp8\Xamarin.Forms.MapExtend.WindowsPhone.xml" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.WindowsPhone\bin\Release\Xamarin.Forms.MapExtend.WindowsPhone.xml" target="lib\wp8\Xamarin.Forms.MapExtend.WindowsPhone.pdb" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xam.Plugin.MapExtend.Abstractions.dll" target="lib\wp8\Xam.Plugin.MapExtend.Abstractions.dll" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xam.Plugin.MapExtend.Abstractions.xml" target="lib\wp8\Xam.Plugin.MapExtend.Abstractions.xml" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xam.Plugin.MapExtend.Abstractions.pdb" target="lib\wp8\Xam.Plugin.MapExtend.Abstractions.pdb" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.WindowsPhone\bin\Release\Xam.Plugin.MapExtend.WindowsPhone.dll" target="lib\wp8\Xam.Plugin.MapExtend.WindowsPhone.dll" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.WindowsPhone\bin\Release\Xam.Plugin.MapExtend.WindowsPhone.xml" target="lib\wp8\Xam.Plugin.MapExtend.WindowsPhone.xml" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.WindowsPhone\bin\Release\Xam.Plugin.MapExtend.WindowsPhone.xml" target="lib\wp8\Xam.Plugin.MapExtend.WindowsPhone.pdb" />
 
      <!--Xamarin.Android-->
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.dll" target="lib\MonoAndroid10\Xamarin.Forms.MapExtend.Abstractions.dll" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.xml" target="lib\MonoAndroid10\Xamarin.Forms.MapExtend.Abstractions.xml" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.pdb" target="lib\MonoAndroid10\Xamarin.Forms.MapExtend.Abstractions.pdb" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Android\bin\Release\Xamarin.Forms.MapExtend.Android.dll" target="lib\MonoAndroid10\Xamarin.Forms.MapExtend.Android.dll" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Android\bin\Release\Xamarin.Forms.MapExtend.Android.xml" target="lib\MonoAndroid10\Xamarin.Forms.MapExtend.Android.xml" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Android\bin\Release\Xamarin.Forms.MapExtend.Android.xml" target="lib\MonoAndroid10\Xamarin.Forms.MapExtend.Android.pdb" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xam.Plugin.MapExtend.Abstractions.dll" target="lib\MonoAndroid10\Xam.Plugin.MapExtend.Abstractions.dll" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xam.Plugin.MapExtend.Abstractions.xml" target="lib\MonoAndroid10\Xam.Plugin.MapExtend.Abstractions.xml" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xam.Plugin.MapExtend.Abstractions.pdb" target="lib\MonoAndroid10\Xam.Plugin.MapExtend.Abstractions.pdb" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Android\bin\Release\Xam.Plugin.MapExtend.Android.dll" target="lib\MonoAndroid10\Xam.Plugin.MapExtend.Android.dll" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Android\bin\Release\Xam.Plugin.MapExtend.Android.xml" target="lib\MonoAndroid10\Xam.Plugin.MapExtend.Android.xml" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Android\bin\Release\Xam.Plugin.MapExtend.Android.xml" target="lib\MonoAndroid10\Xam.Plugin.MapExtend.Android.pdb" />
 
      <!--Xamarin.iOS-->
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.dll" target="lib\MonoAndroid10\Xamarin.Forms.MapExtend.Abstractions.dll" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.xml" target="lib\MonoAndroid10\Xamarin.Forms.MapExtend.Abstractions.xml" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.pdb" target="lib\MonoAndroid10\Xamarin.Forms.MapExtend.Abstractions.pdb" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.iOS\bin\iPhone\Release\MapExtend.Maps.Plugin.Forms.Plugin.iOS.dll" target="lib\MonoTouch10\MapExtend.Maps.Plugin.Forms.Plugin.iOS.dll" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.iOS\bin\iPhone\Release\MapExtend.Maps.Plugin.Forms.Plugin.iOS.xml" target="lib\MonoTouch10\MapExtend.Maps.Plugin.Forms.Plugin.iOS.xml" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xam.Plugin.MapExtend.Abstractions.dll" target="lib\MonoAndroid10\Xam.Plugin.MapExtend.Abstractions.dll" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xam.Plugin.MapExtend.Abstractions.xml" target="lib\MonoAndroid10\Xam.Plugin.MapExtend.Abstractions.xml" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xam.Plugin.MapExtend.Abstractions.pdb" target="lib\MonoAndroid10\Xam.Plugin.MapExtend.Abstractions.pdb" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.iOS\bin\iPhone\Release\Xam.Plugin.MapExtend.iOS.dll" target="lib\MonoTouch10\Xam.Plugin.MapExtend.iOS.dll" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.iOS\bin\iPhone\Release\Xam.Plugin.MapExtend.iOS.xml" target="lib\MonoTouch10\Xam.Plugin.MapExtend.iOS.xml" />
      
      <!--Xamarin.iOS-->
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.dll" target="lib\Xamarin.iOS10\Xamarin.Forms.MapExtend.Abstractions.dll" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.xml" target="lib\Xamarin.iOS10\Xamarin.Forms.MapExtend.Abstractions.xml" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.pdb" target="lib\Xamarin.iOS10\Xamarin.Forms.MapExtend.Abstractions.pdb" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.iOSUnified\bin\iPhone\Release\MapExtend.Maps.Plugin.Forms.Plugin.iOSUnified.dll" target="lib\Xamarin.iOS10\MapExtend.Maps.Plugin.Forms.Plugin.iOSUnified.dll" />
-     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.iOSUnified\bin\iPhone\Release\MapExtend.Maps.Plugin.Forms.Plugin.iOSUnified.xml" target="lib\Xamarin.iOS10\MapExtend.Maps.Plugin.Forms.Plugin.iOSUnified.xml" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xam.Plugin.MapExtend.Abstractions.dll" target="lib\Xamarin.iOS10\Xam.Plugin.MapExtend.Abstractions.dll" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xam.Plugin.MapExtend.Abstractions.xml" target="lib\Xamarin.iOS10\Xam.Plugin.MapExtend.Abstractions.xml" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xam.Plugin.MapExtend.Abstractions.pdb" target="lib\Xamarin.iOS10\Xam.Plugin.MapExtend.Abstractions.pdb" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.iOSUnified\bin\iPhone\Release\Xam.Plugin.MapExtend.iOSUnified.dll" target="lib\Xamarin.iOS10\Xam.Plugin.MapExtend.iOSUnified.dll" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.iOSUnified\bin\iPhone\Release\Xam.Plugin.MapExtend.iOSUnified.xml" target="lib\Xamarin.iOS10\Xam.Plugin.MapExtend.iOSUnified.xml" />
 
    </files>
 </package>

@@ -1,16 +1,17 @@
-using Xamarin.Forms.MapExtend.Abstractions;
+using Xam.Plugin.MapExtend.Abstractions;
 using System;
 using Xamarin.Forms;
-using Xamarin.Forms.MapExtend.Droid;
+using Xam.Plugin.MapExtend.Droid;
 using Xamarin.Forms.Maps.Android;
 using Xamarin.Forms.Maps;
 using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
 using Android.App;
+using Xamarin;
 
 
-[assembly: ExportRenderer(typeof(Xamarin.Forms.MapExtend.Abstractions.MapExtend), typeof(Xamarin.Forms.MapExtend.Droid.MapExtendRenderer))]
-namespace Xamarin.Forms.MapExtend.Droid
+[assembly: ExportRenderer(typeof(Xam.Plugin.MapExtend.Abstractions.MapExtend), typeof(Xam.Plugin.MapExtend.Droid.MapExtendRenderer))]
+namespace Xam.Plugin.MapExtend.Droid
 {
     /// <summary>
     /// MapExtend.Maps.Plugin Implementation
@@ -28,7 +29,7 @@ namespace Xamarin.Forms.MapExtend.Droid
         {
             base.OnElementChanged(e);
 
-            var formsMap = (Xamarin.Forms.MapExtend.Abstractions.MapExtend)Element;
+            var formsMap = (Xam.Plugin.MapExtend.Abstractions.MapExtend)Element;
             var androidMapView = (Android.Gms.Maps.MapView)Control;
 
 
@@ -67,7 +68,7 @@ namespace Xamarin.Forms.MapExtend.Droid
             try
             {
                 var androidMapView = (MapView)Control;
-                var formsMap = (Xamarin.Forms.MapExtend.Abstractions.MapExtend)Element;
+                var formsMap = (Xam.Plugin.MapExtend.Abstractions.MapExtend)Element;
                 //androidMapView.Map.Clear();
                 PolylineOptions line = new PolylineOptions();
                 line.InvokeColor(global::Android.Graphics.Color.Blue);
@@ -94,7 +95,7 @@ namespace Xamarin.Forms.MapExtend.Droid
         private void updatePins()
         {
             var androidMapView = (MapView)Control;
-            var formsMap = (Xamarin.Forms.MapExtend.Abstractions.MapExtend)Element;
+            var formsMap = (Xam.Plugin.MapExtend.Abstractions.MapExtend)Element;
 
             //androidMapView.Map.Clear();
 

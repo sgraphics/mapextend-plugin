@@ -8,9 +8,9 @@
     <ProjectGuid>{D525F236-6A2D-4010-B1CC-4A4B8581C90B}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>MapExtend.Maps.Plugin.Forms.Plugin.iOS</RootNamespace>
+    <RootNamespace>Xam.Plugin.MapExtend.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>MapExtend.Maps.Plugin.Forms.Plugin.iOS</AssemblyName>
+    <AssemblyName>Xam.Plugin.MapExtend.iOS</AssemblyName>
     <NuGetPackageImportStamp>50bc45db</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
-    <DocumentationFile>bin\iPhone\Release\MapExtend.Maps.Plugin.Forms.Plugin.iOS.XML</DocumentationFile>
+    <DocumentationFile>bin\iPhone\Release\Xam.Plugin.MapExtend.iOS.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="MapExtend.Maps.PluginImplementation.cs" />

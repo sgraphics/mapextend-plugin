@@ -1,0 +1,21 @@
+%YAML 1.2
+---
+summary: One extend of Xamarin.Forms.Maps that allows you to create routes and other functions
+getting-started: GettingStarted.md
+details: Details.md
+screenshots: 
+  - screenshots/screenshot1.png
+license: License.md
+icons: 
+  - component_mapExtend_128x128.png
+  - component_mapExtend_512x512.png
+publisher: Rafael Rodrigues Moura
+name: MapExtend
+id: component_mapExtend
+samples: 
+  iOS Sample: ../samples/AwesomeSample/AwesomeSample.sln
+publisher-url: www.rm.eti.br
+libraries: 
+  ios: ../lib/ios/Awesome.dll
+version: 1.3.0.0
+...

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Xamarin.Forms.MapExtend.Abstractions.Models.Places
+namespace Xam.Plugin.MapExtend.Abstractions.Models.Places
 {
     public class Rootobject
     {

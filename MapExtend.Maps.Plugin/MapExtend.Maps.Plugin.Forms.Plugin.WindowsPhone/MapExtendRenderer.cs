@@ -1,15 +1,17 @@
-﻿using Xamarin.Forms.MapExtend.Abstractions;
+﻿using Xam.Plugin.MapExtend.Abstractions;
 using System;
 using Xamarin.Forms;
-using Xamarin.Forms.MapExtend.WinPhone;
+using Xam.Plugin.MapExtend.WindowsPhone;
 using Xamarin.Forms.Maps.WP8;
 using Xamarin.Forms.Maps;
 using Microsoft.Phone.Maps.Toolkit;
 using Microsoft.Phone.Maps.Controls;
 using System.Device.Location;
+using Xamarin;
+using Xamarin.Forms.Platform.WinPhone;
 
-[assembly: ExportRenderer(typeof(Xamarin.Forms.MapExtend.Abstractions.MapExtend), typeof(Xamarin.Forms.MapExtend.WinPhone.MapExtendRenderer))]
-namespace Xamarin.Forms.MapExtend.WinPhone
+[assembly: ExportRenderer(typeof(Xam.Plugin.MapExtend.Abstractions.MapExtend), typeof(Xam.Plugin.MapExtend.WindowsPhone.MapExtendRenderer))]
+namespace Xam.Plugin.MapExtend.WindowsPhone
 {
     /// <summary>
     /// MapExtend.Maps.Plugin Implementation
@@ -24,11 +26,11 @@ namespace Xamarin.Forms.MapExtend.WinPhone
             FormsMaps.Init(appID, authToken);
         }
 
-        protected override void OnElementChanged(Platform.WinPhone.ElementChangedEventArgs<Maps.Map> e)
+        protected override void OnElementChanged(ElementChangedEventArgs<Xamarin.Forms.Maps.Map> e)
         {
             base.OnElementChanged(e);
 
-            var formsMap = (Xamarin.Forms.MapExtend.Abstractions.MapExtend)Element;
+            var formsMap = (Xam.Plugin.MapExtend.Abstractions.MapExtend)Element;
             var winPhoneMapView = Control;
 
 
@@ -52,7 +54,7 @@ namespace Xamarin.Forms.MapExtend.WinPhone
             try
             {
                 var winPhoneMapView = Control;
-                var formsMap = (Xamarin.Forms.MapExtend.Abstractions.MapExtend)Element;
+                var formsMap = (Xam.Plugin.MapExtend.Abstractions.MapExtend)Element;
                 //androidMapView.Map.Clear();
                 MapPolyline line = new MapPolyline();
                 line.StrokeThickness = 15;
@@ -79,7 +81,7 @@ namespace Xamarin.Forms.MapExtend.WinPhone
         private void updatePins()
         {
             var winPhoneMapView = Control;
-            var formsMap = (Xamarin.Forms.MapExtend.Abstractions.MapExtend)Element;
+            var formsMap = (Xam.Plugin.MapExtend.Abstractions.MapExtend)Element;
 
 
 

@@ -6,11 +6,11 @@ using Android.App;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Xamarin.Forms.MapExtend.Android")]
+[assembly: AssemblyTitle("Xam.Plugin.MapExtend.Android")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("RM")]
-[assembly: AssemblyProduct("Xamarin.Forms.MapExtend.Android")]
+[assembly: AssemblyProduct("Xam.Plugin.MapExtend.Android")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("RM")]
 [assembly: AssemblyCulture("")]
