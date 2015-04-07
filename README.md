@@ -1,7 +1,7 @@
 # MapExtend for Xamarin.Forms
 MapExtend for Xamarin.Forms is a plugin for Xamarin.Forms allowing users to draw routes, reveal nearby locations, and place pins at certain addresses.
 
-![](http://www.rm.eti.br/Images/Icon.png) 
+![](http://www.rm.eti.br/Images/Icon.png)
 
 ## How to Download
 [Download MapExtend](https://www.nuget.org/packages/Xamarin.Forms.MapExtend/1.5.0) using the [NuGet Package Manager](https://www.nuget.org/).
@@ -63,6 +63,6 @@ string applicationId = "APP_ID_FROM_PORTAL", authToken = "AUTH_TOKEN_FROM_PORTAL
 MapExtend.Init(applicationId, authToken);
 
 
-# CODE
+### CODE
 
 //TODO: Create examples
