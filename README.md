@@ -22,7 +22,9 @@ MapExtend.Init()
 This call should be made after the Xamarin.Forms.Forms.Init() method call. The Xamarin.Forms templates have this call in the following files for each platform:
 
 **iOS** - AppDelegate.cs file, in the FinishedLaunching method.
+
 **Android** - MainActivity.cs file, in the OnCreate method.
+
 **Windows Phone** - MainPage.xaml.cs file, in the MainPage constructor.
 
 Once the NuGet package has been added and the initialization method called inside each applcation, Xamarin.Forms.MapExtend APIs can be used in the common PCL or Shared Project code.
