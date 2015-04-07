@@ -49,18 +49,18 @@
      <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Android\bin\Release\Xamarin.Forms.MapExtend.Android.xml" target="lib\MonoAndroid10\Xamarin.Forms.MapExtend.Android.pdb" />
 
      <!--Xamarin.iOS-->
-     <file src="..\Refractored.Xam.Vibrate.Abstractions\bin\Release\Refractored.Xam.Vibrate.Abstractions.dll" target="lib\MonoTouch10\Refractored.Xam.Vibrate.Abstractions.dll" />
-     <file src="..\Refractored.Xam.Vibrate.Abstractions\bin\Release\Refractored.Xam.Vibrate.Abstractions.xml" target="lib\MonoTouch10\Refractored.Xam.Vibrate.Abstractions.xml" />
-     <file src="..\Refractored.Xam.Vibrate.Abstractions\bin\Release\Refractored.Xam.Vibrate.Abstractions.pdb" target="lib\MonoTouch10\Refractored.Xam.Vibrate.Abstractions.pdb" />
-     <file src="..\Refractored.Xam.Forms.Vibrate.iOS\bin\iPhone\Release\Refractored.Xam.Forms.Vibrate.iOS.dll" target="lib\MonoTouch10\Refractored.Xam.Forms.Vibrate.iOS.dll" />
-     <file src="..\Refractored.Xam.Forms.Vibrate.iOS\bin\iPhone\Release\Refractored.Xam.Forms.Vibrate.iOS.xml" target="lib\MonoTouch10\Refractored.Xam.Forms.Vibrate.iOS.xml" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.dll" target="lib\MonoAndroid10\Xamarin.Forms.MapExtend.Abstractions.dll" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.xml" target="lib\MonoAndroid10\Xamarin.Forms.MapExtend.Abstractions.xml" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.pdb" target="lib\MonoAndroid10\Xamarin.Forms.MapExtend.Abstractions.pdb" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.iOS\bin\iPhone\Release\MapExtend.Maps.Plugin.Forms.Plugin.iOS.dll" target="lib\MonoTouch10\MapExtend.Maps.Plugin.Forms.Plugin.iOS.dll" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.iOS\bin\iPhone\Release\MapExtend.Maps.Plugin.Forms.Plugin.iOS.xml" target="lib\MonoTouch10\MapExtend.Maps.Plugin.Forms.Plugin.iOS.xml" />
      
      <!--Xamarin.iOS-->
-     <file src="..\Refractored.Xam.Vibrate.Abstractions\bin\Release\Refractored.Xam.Vibrate.Abstractions.dll" target="lib\Xamarin.iOS10\Refractored.Xam.Vibrate.Abstractions.dll" />
-     <file src="..\Refractored.Xam.Vibrate.Abstractions\bin\Release\Refractored.Xam.Vibrate.Abstractions.xml" target="lib\Xamarin.iOS10\Refractored.Xam.Vibrate.Abstractions.xml" />
-     <file src="..\Refractored.Xam.Vibrate.Abstractions\bin\Release\Refractored.Xam.Vibrate.Abstractions.pdb" target="lib\Xamarin.iOS10\Refractored.Xam.Vibrate.Abstractions.pdb" />
-     <file src="..\Refractored.Xam.Forms.Vibrate.iOSUnified\bin\iPhone\Release\Refractored.Xam.Forms.Vibrate.iOS.dll" target="lib\Xamarin.iOS10\Refractored.Xam.Forms.Vibrate.iOS.dll" />
-     <file src="..\Refractored.Xam.Forms.Vibrate.iOSUnified\bin\iPhone\Release\Refractored.Xam.Forms.Vibrate.iOS.xml" target="lib\Xamarin.iOS10\Refractored.Xam.Forms.Vibrate.iOS.xml" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.dll" target="lib\Xamarin.iOS10\Xamarin.Forms.MapExtend.Abstractions.dll" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.xml" target="lib\Xamarin.iOS10\Xamarin.Forms.MapExtend.Abstractions.xml" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.Abstractions\bin\Release\Xamarin.Forms.MapExtend.Abstractions.pdb" target="lib\Xamarin.iOS10\Xamarin.Forms.MapExtend.Abstractions.pdb" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.iOSUnified\bin\iPhone\Release\MapExtend.Maps.Plugin.Forms.Plugin.iOSUnified.dll" target="lib\Xamarin.iOS10\MapExtend.Maps.Plugin.Forms.Plugin.iOSUnified.dll" />
+     <file src="..\MapExtend.Maps.Plugin.Forms.Plugin.iOSUnified\bin\iPhone\Release\MapExtend.Maps.Plugin.Forms.Plugin.iOSUnified.xml" target="lib\Xamarin.iOS10\MapExtend.Maps.Plugin.Forms.Plugin.iOSUnified.xml" />
 
    </files>
 </package>
