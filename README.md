@@ -3,11 +3,11 @@
 MapExtend for Xamarin.Forms is a plugin for Xamarin.Forms allowing users to draw routes, reveal nearby locations, and place pins at certain addresses.
 
 # Links
-*Nuget PCL: https://www.nuget.org/packages/Xamarin.Forms.MapExtend.Abstractions/
+* Nuget PCL: https://www.nuget.org/packages/Xamarin.Forms.MapExtend.Abstractions/
 
-*Nuget Android: https://www.nuget.org/packages/Xamarin.Forms.MapExtend.Android/
+* Nuget Android: https://www.nuget.org/packages/Xamarin.Forms.MapExtend.Android/
 
-*Nuget WindowsPhone: https://www.nuget.org/packages/MapExtend.Maps.Plugin.Forms.Plugin.WindowsPhone/
+* Nuget WindowsPhone: https://www.nuget.org/packages/MapExtend.Maps.Plugin.Forms.Plugin.WindowsPhone/
 
 
 # Initialization
@@ -44,13 +44,13 @@ Without a valid API key the maps control will display as a grey box on Android.
 
 You'll also need to enable appropriate permissions by right-clicking on the Android project and selecting Options > Build > Android Application and ticking the following:
 
-*AccessCourseLocation
-*AccessFineLocation
-*AccessLocationExtraCommands
-*AccessMockLocation
-*AccessNetworkState
-*AccessWifiState
-*Internet
+* AccessCourseLocation
+* AccessFineLocation
+* AccessLocationExtraCommands
+* AccessMockLocation
+* AccessNetworkState
+* AccessWifiState
+* Internet
 
 #Windows Phone
 
