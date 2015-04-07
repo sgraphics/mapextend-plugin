@@ -1,12 +1,13 @@
-# mapextend-plugin
+## ![](http://www.rm.eti.br/Images/Icon.png) MapExtend for Xamarin.Forms
+
 MapExtend for Xamarin.Forms is a plugin for Xamarin.Forms allowing users to draw routes, reveal nearby locations, and place pins at certain addresses.
 
 # Links
-Nuget PCL: https://www.nuget.org/packages/Xamarin.Forms.MapExtend.Abstractions/
+*Nuget PCL: https://www.nuget.org/packages/Xamarin.Forms.MapExtend.Abstractions/
 
-Nuget Android: https://www.nuget.org/packages/Xamarin.Forms.MapExtend.Android/
+*Nuget Android: https://www.nuget.org/packages/Xamarin.Forms.MapExtend.Android/
 
-Nuget WindowsPhone: https://www.nuget.org/packages/MapExtend.Maps.Plugin.Forms.Plugin.WindowsPhone/
+*Nuget WindowsPhone: https://www.nuget.org/packages/MapExtend.Maps.Plugin.Forms.Plugin.WindowsPhone/
 
 
 # Initialization
@@ -20,9 +21,9 @@ MapExtend.Init()
 
 This call should be made after the Xamarin.Forms.Forms.Init() method call. The Xamarin.Forms templates have this call in the following files for each platform:
 
-iOS - AppDelegate.cs file, in the FinishedLaunching method.
-Android - MainActivity.cs file, in the OnCreate method.
-Windows Phone - MainPage.xaml.cs file, in the MainPage constructor.
+**iOS** - AppDelegate.cs file, in the FinishedLaunching method.
+**Android** - MainActivity.cs file, in the OnCreate method.
+**Windows Phone** - MainPage.xaml.cs file, in the MainPage constructor.
 
 Once the NuGet package has been added and the initialization method called inside each applcation, Xamarin.Forms.MapExtend APIs can be used in the common PCL or Shared Project code.
 
@@ -31,7 +32,7 @@ Once the NuGet package has been added and the initialization method called insid
 
 #iOS
 
-Work On it
+**Work On it**
 
 #Android
 
@@ -43,13 +44,13 @@ Without a valid API key the maps control will display as a grey box on Android.
 
 You'll also need to enable appropriate permissions by right-clicking on the Android project and selecting Options > Build > Android Application and ticking the following:
 
-AccessCourseLocation
-AccessFineLocation
-AccessLocationExtraCommands
-AccessMockLocation
-AccessNetworkState
-AccessWifiState
-Internet
+*AccessCourseLocation
+*AccessFineLocation
+*AccessLocationExtraCommands
+*AccessMockLocation
+*AccessNetworkState
+*AccessWifiState
+*Internet
 
 #Windows Phone
 
