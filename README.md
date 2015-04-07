@@ -3,7 +3,9 @@ MapExtend for Xamarin.Forms is a plugin for Xamarin.Forms allowing users to draw
 
 # Links
 Nuget PCL: https://www.nuget.org/packages/Xamarin.Forms.MapExtend.Abstractions/
+
 Nuget Android: https://www.nuget.org/packages/Xamarin.Forms.MapExtend.Android/
+
 Nuget WindowsPhone: https://www.nuget.org/packages/MapExtend.Maps.Plugin.Forms.Plugin.WindowsPhone/
 
 
