@@ -24,9 +24,8 @@ Windows Phone - MainPage.xaml.cs file, in the MainPage constructor.
 
 Once the NuGet package has been added and the initialization method called inside each applcation, Xamarin.Forms.MapExtend APIs can be used in the common PCL or Shared Project code.
 
-# Initialization
 
-Platform Configuration
+#Platform Configuration
 
 #iOS
 
@@ -39,3 +38,31 @@ To use the Google Maps API v2 on Android you must generate an API key and add it
 <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="YoApiKey" />
 
 Without a valid API key the maps control will display as a grey box on Android.
+
+You'll also need to enable appropriate permissions by right-clicking on the Android project and selecting Options > Build > Android Application and ticking the following:
+
+AccessCourseLocation
+AccessFineLocation
+AccessLocationExtraCommands
+AccessMockLocation
+AccessNetworkState
+AccessWifiState
+Internet
+
+#Windows Phone
+
+The Map control and user location API in Windows Phone requires the ID_CAP_MAP and ID_CAP_LOCATION capabilities to be selected.
+
+To set these values in a new Windows Phone app, open the Properties folder and double-click the WMAppManifest.xml file. Go to the Capabilities tab and tick ID_CAP_MAP and ID_CAP_LOCATION.
+
+While you can debug your app with just the device capabilities set, apps must have an Authentication Token set before they are deployed to the Windows Phone store. Instructions are available on MSDN to add the ApplicationID and AuthenticationToken to a Windows Phone app.
+
+To add the ApplicationID and AuthenticationToken to a Xamarin.Forms Windows Phone app, use the FormsMaps.Init method as shown below:
+
+string applicationId = "APP_ID_FROM_PORTAL", authToken = "AUTH_TOKEN_FROM_PORTAL";
+FormsMaps.Init(applicationId, authToken);
+
+
+# CODE
+
+//TODO: Create examples
