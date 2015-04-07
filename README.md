@@ -3,11 +3,7 @@
 MapExtend for Xamarin.Forms is a plugin for Xamarin.Forms allowing users to draw routes, reveal nearby locations, and place pins at certain addresses.
 
 # Links
-* Nuget PCL: https://www.nuget.org/packages/Xamarin.Forms.MapExtend.Abstractions/
-
-* Nuget Android: https://www.nuget.org/packages/Xamarin.Forms.MapExtend.Android/
-
-* Nuget WindowsPhone: https://www.nuget.org/packages/MapExtend.Maps.Plugin.Forms.Plugin.WindowsPhone/
+* Nuget PCL: https://www.nuget.org/packages/Xamarin.Forms.MapExtend/1.5.0
 
 
 # Initialization
@@ -16,7 +12,6 @@ When adding MapExtend to a Xamarin.Forms application,Xamarin.Forms.MapExtend is 
 
 After installing the NuGet package, the following initialization code is required in each application project:
 
-Xamarin.FormsMaps.Init();
 MapExtend.Init()
 
 This call should be made after the Xamarin.Forms.Forms.Init() method call. The Xamarin.Forms templates have this call in the following files for each platform:
@@ -65,7 +60,7 @@ While you can debug your app with just the device capabilities set, apps must ha
 To add the ApplicationID and AuthenticationToken to a Xamarin.Forms Windows Phone app, use the FormsMaps.Init method as shown below:
 
 string applicationId = "APP_ID_FROM_PORTAL", authToken = "AUTH_TOKEN_FROM_PORTAL";
-FormsMaps.Init(applicationId, authToken);
+MapExtend.Init(applicationId, authToken);
 
 
 # CODE
