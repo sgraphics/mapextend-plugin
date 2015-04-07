@@ -4,7 +4,7 @@ MapExtend for Xamarin.Forms is a plugin for Xamarin.Forms allowing users to draw
 ![](http://www.rm.eti.br/Images/Icon.png) 
 
 ## How to Download
-[Download MapExtend]((https://www.nuget.org/packages/Xamarin.Forms.MapExtend/1.5.0) using the [NuGet Package Manager](https://www.nuget.org/).
+[Download MapExtend](https://www.nuget.org/packages/Xamarin.Forms.MapExtend/1.5.0) using the [NuGet Package Manager](https://www.nuget.org/).
 
 ## Usage
 ### Initialization
