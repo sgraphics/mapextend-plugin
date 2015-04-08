@@ -121,7 +121,7 @@ namespace Xam.Plugin.MapExtend.Abstractions
         /// <param name="API_KEY">API KEY FROM GOOGLE PLACES API</param>
         public async Task NearbyLocations(string API_KEY, string types)
         {
-            String PLACES_SEARCH_URL = "https://maps.googleapis.com/maps/api/place/search/json?location=" + this.VisibleRegion.Center.Latitude.ToString().Replace(',', '.') + "," + this.VisibleRegion.Center.Longitude.ToString().Replace(',', '.') + "&radius=" + this.VisibleRegion.Radius.Meters;
+            String PLACES_SEARCH_URL = "https://maps.googleapis.com/maps/api/place/search/json?location=" + this.VisibleRegion.Center.Latitude.ToString().Replace(',', '.') + "," + this.VisibleRegion.Center.Longitude.ToString().Replace(',', '.') + "&radius=" + this.VisibleRegion.Radius.Meters.ToString().Replace(',', '.');
 
             if (!string.IsNullOrEmpty(types))
                 PLACES_SEARCH_URL += "&types=" + types;
