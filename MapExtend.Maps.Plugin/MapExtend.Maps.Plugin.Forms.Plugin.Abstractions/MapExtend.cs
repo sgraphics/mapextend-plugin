@@ -29,6 +29,7 @@ namespace Xam.Plugin.MapExtend.Abstractions
         public MapExtend()
             : base()
         {
+            polilenes = new ObservableCollection<Position>();
         }
 
         /// <summary>
