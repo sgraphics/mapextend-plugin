@@ -12,7 +12,7 @@ When adding MapExtend to a Xamarin.Forms application,Xamarin.Forms.MapExtend is 
 
 After installing the NuGet package, the following initialization code is required in each application project:
 
-MapExtend.Init()
+MapExtendRenderer.Init();
 
 This call should be made after the Xamarin.Forms.Forms.Init() method call. The Xamarin.Forms templates have this call in the following files for each platform:
 
@@ -29,7 +29,16 @@ Once the NuGet package has been added and the initialization method called insid
 
 ### iOS
 
-**Work On it**
+On iOS 7 the map control "just works", so long as the MapExtendRenderer.Init() call has been made.
+
+For iOS 8 two keys need to be added to the Info.plist file: NSLocationAlwaysUsageDescription and NSLocationWhenInUseUsageDescription. The XML representation is shown below - you should update the string values to reflect how your application is using the location information:
+
+<key>NSLocationAlwaysUsageDescription</key>
+    <string>Can we use your location</string>
+<key>NSLocationWhenInUseUsageDescription</key>
+    <string>We are using your location</string>
+
+The plist entries can also be added in Source view while editing the Info.plist
 
 ### Android
 
@@ -48,6 +57,9 @@ You'll also need to enable appropriate permissions by right-clicking on the Andr
 * AccessNetworkState
 * AccessWifiState
 * Internet
+ 
+Use it to Init:
+MapExtendRenderer.Init(this, bundle);
 
 #### Windows Phone
 
@@ -60,7 +72,7 @@ While you can debug your app with just the device capabilities set, apps must ha
 To add the ApplicationID and AuthenticationToken to a Xamarin.Forms Windows Phone app, use the FormsMaps.Init method as shown below:
 
 string applicationId = "APP_ID_FROM_PORTAL", authToken = "AUTH_TOKEN_FROM_PORTAL";
-MapExtend.Init(applicationId, authToken);
+MapExtendRenderer.Init(applicationId, authToken);
 
 
 ### CODE
