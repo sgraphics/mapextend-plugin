@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Xam.Plugin.MapExtend.iOSUnified</name>
+    </assembly>
+    <members>
+        <member name="T:Xam.Plugin.MapExtend.iOSUnified.MapExtendRenderer">
+            <summary>
+            MapExtend.Maps.Plugin Implementation
+            </summary>
+        </member>
+        <member name="M:Xam.Plugin.MapExtend.iOSUnified.MapExtendRenderer.Init">
+            <summary>
+            Used for registration with dependency service
+            </summary>
+        </member>
+    </members>
+</doc>

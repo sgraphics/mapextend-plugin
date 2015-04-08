@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Xam.Plugin.MapExtend.WindowsPhone</name>
+    </assembly>
+    <members>
+        <member name="T:Xam.Plugin.MapExtend.WindowsPhone.MapExtendRenderer">
+            <summary>
+            MapExtend.Maps.Plugin Implementation
+            </summary>
+        </member>
+        <member name="M:Xam.Plugin.MapExtend.WindowsPhone.MapExtendRenderer.Init(System.String,System.String)">
+            <summary>
+            Used for registration with dependency service
+            </summary>
+        </member>
+    </members>
+</doc>
