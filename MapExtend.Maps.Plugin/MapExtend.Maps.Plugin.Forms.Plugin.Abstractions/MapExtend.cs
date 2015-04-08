@@ -45,7 +45,7 @@ namespace Xam.Plugin.MapExtend.Abstractions
 
         private string getMapsApiDirectionsUrl(Position From, Position To)
         {
-            String waypoints = string.Format("http://216.58.222.10/maps/api/directions/json?origin={0},{1}&destination={2},{3}&sensor=false", Math.Round(From.Latitude, 5), Math.Round(From.Longitude, 5), Math.Round(To.Latitude, 5), Math.Round(To.Longitude, 5));
+            String waypoints = string.Format("http://216.58.222.10/maps/api/directions/json?origin={0},{1}&destination={2},{3}&sensor=false", From.Latitude.ToString().Replace(',', '.'), From.Longitude.ToString().Replace(',', '.'), To.Latitude.ToString().Replace(',', '.'), To.Longitude.ToString().Replace(',', '.'));
 
             return waypoints;
         }
@@ -121,7 +121,7 @@ namespace Xam.Plugin.MapExtend.Abstractions
         /// <param name="API_KEY">API KEY FROM GOOGLE PLACES API</param>
         public async Task NearbyLocations(string API_KEY, string types)
         {
-            String PLACES_SEARCH_URL = "https://maps.googleapis.com/maps/api/place/search/json?location=" + Math.Round(this.VisibleRegion.Center.Latitude, 5) + "," + Math.Round(this.VisibleRegion.Center.Longitude, 5) + "&radius=" + this.VisibleRegion.Radius.Meters;
+            String PLACES_SEARCH_URL = "https://maps.googleapis.com/maps/api/place/search/json?location=" + this.VisibleRegion.Center.Latitude.ToString().Replace(',', '.') + "," + this.VisibleRegion.Center.Longitude.ToString().Replace(',', '.') + "&radius=" + this.VisibleRegion.Radius.Meters;
 
             if (!string.IsNullOrEmpty(types))
                 PLACES_SEARCH_URL += "&types=" + types;
