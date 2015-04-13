@@ -82,8 +82,8 @@ MapExtendRenderer.Init(applicationId, authToken);
 
 # Contributors
 
-[Lucio](https://github.com/LucioMSP)
-
 [James Montemagno](https://github.com/jamesmontemagno)
 
 [Pierce Boggan](https://github.com/pierceboggan)
+
+[Vicente Guzman](https://github.com/LucioMSP)
