@@ -91,6 +91,8 @@ namespace Xam.Plugin.MapExtend.iOS
             var mkMapView = Control;
             var formsMap = (Xam.Plugin.MapExtend.Abstractions.MapExtend)Element;
 
+            if (mkMapView.Annotations.Length > 0)
+                mkMapView.RemoveAnnotations(mkMapView.Annotations);
 
             var items = formsMap.Pins;
 

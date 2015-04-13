@@ -97,7 +97,7 @@ namespace Xam.Plugin.MapExtend.Droid
             var androidMapView = (MapView)Control;
             var formsMap = (Xam.Plugin.MapExtend.Abstractions.MapExtend)Element;
 
-            //androidMapView.Map.Clear();
+            androidMapView.Map.Clear();
 
 
             androidMapView.Map.MyLocationEnabled = formsMap.IsShowingUser;
