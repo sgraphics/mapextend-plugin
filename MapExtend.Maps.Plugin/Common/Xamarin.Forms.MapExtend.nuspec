@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
        <id>Xam.Plugin.MapExtend</id>
-       <version>1.0.0.5</version>
+       <version>1.0.0.6</version>
        <title>MapExtend plugin for Xamarin.Forms</title>
        <authors>Rafael Rodrigues Moura</authors>
        <owners>Rafael Rodrigues Moura</owners>
@@ -21,6 +21,12 @@
 		REPLACE "," to "." on coords to send to GoogleMaps API - FIXED
 		
 		REPLACE "," to "." on radius to send to GoogleMaps API - FIXED
+		
+		### WINDOWS PHONE BUGFIXED ###
+		
+		App Close on Create Pin - FIXED
+		
+		Size of Line Route chaged to 5 in WindowsPhone
 	   
         MapExtend for Xamarin.Forms is a plugin for Xamarin.Forms 
 		allowing users to draw routes, reveal nearby locations, 

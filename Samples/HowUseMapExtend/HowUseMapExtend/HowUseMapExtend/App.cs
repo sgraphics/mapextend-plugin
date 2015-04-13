@@ -89,7 +89,7 @@ namespace HowUseMapExtend
 
             var locator = CrossGeolocator.Current;
 
-            locator.DesiredAccuracy = 50;
+            locator.DesiredAccuracy = 20;
 
             var geoLocation = locator.GetPositionAsync().ContinueWith(t =>
             {

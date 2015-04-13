@@ -9,6 +9,8 @@ using Microsoft.Phone.Maps.Controls;
 using System.Device.Location;
 using Xamarin;
 using Xamarin.Forms.Platform.WinPhone;
+using System.Collections.Generic;
+using System.Windows;
 
 [assembly: ExportRenderer(typeof(Xam.Plugin.MapExtend.Abstractions.MapExtend), typeof(Xam.Plugin.MapExtend.WindowsPhone.MapExtendRenderer))]
 namespace Xam.Plugin.MapExtend.WindowsPhone
@@ -24,6 +26,8 @@ namespace Xam.Plugin.MapExtend.WindowsPhone
         public static void Init(string appID, string authToken)
         {
             FormsMaps.Init(appID, authToken);
+
+
         }
 
         protected override void OnElementChanged(ElementChangedEventArgs<Xamarin.Forms.Maps.Map> e)
@@ -32,7 +36,7 @@ namespace Xam.Plugin.MapExtend.WindowsPhone
 
             var formsMap = (Xam.Plugin.MapExtend.Abstractions.MapExtend)Element;
             var winPhoneMapView = Control;
-
+            winPhoneMapView.Tap += winPhoneMapView_Tap;
 
 
             if (formsMap != null)
@@ -43,6 +47,11 @@ namespace Xam.Plugin.MapExtend.WindowsPhone
 
             }
 
+
+        }
+
+        private void winPhoneMapView_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
 
         }
 
@@ -83,34 +92,41 @@ namespace Xam.Plugin.MapExtend.WindowsPhone
 
         private void updatePins()
         {
-            //var winPhoneMapView = Control;
-            //var formsMap = (Xam.Plugin.MapExtend.Abstractions.MapExtend)Element;
+            var winPhoneMapView = Control;
+            var formsMap = (Xam.Plugin.MapExtend.Abstractions.MapExtend)Element;
 
+            var items = formsMap.Pins;
+            var toRemove = new List<MapLayer>();
+            foreach (var item in winPhoneMapView.Layers)
+            {
+                if (item.Count > 0)
+                    if (item[0].Content is Pushpin)
+                        toRemove.Add(item);
+            }
+            foreach (var item in toRemove)
+            {
+                winPhoneMapView.Layers.Remove(item);
+            }
 
+            foreach (var item in items)
+            {
+                MapLayer myLayer = new MapLayer();
+                var markerWithIcon = new Pushpin();
+                markerWithIcon.GeoCoordinate = new GeoCoordinate(item.Position.Latitude, item.Position.Longitude);
+                markerWithIcon.Content = (string.IsNullOrWhiteSpace(item.Label) ? "-" : item.Label);
 
+                //markerWithIcon.AllowDrop = true;
 
-            //var items = formsMap.Pins;
+                MapOverlay myOverlay = new MapOverlay()
+                {
+                    GeoCoordinate = markerWithIcon.GeoCoordinate,
+                    Content = markerWithIcon
+                };
 
-            //winPhoneMapView.Layers.Clear();
+                myLayer.Add(myOverlay);
 
-            //foreach (var item in items)
-            //{
-            //    MapLayer myLayer = new MapLayer();
-            //    var markerWithIcon = new Pushpin();
-            //    markerWithIcon.GeoCoordinate = new GeoCoordinate(item.Position.Latitude, item.Position.Longitude);
-            //    //markerWithIcon.Content = (string.IsNullOrWhiteSpace(item.Label) ? "-" : item.Label);
-
-            //    //markerWithIcon.AllowDrop = true;
-
-            //    MapOverlay myOverlay = new MapOverlay() { 
-            //        GeoCoordinate = markerWithIcon.GeoCoordinate,
-            //        Content = markerWithIcon
-            //    };
-
-            //    myLayer.Add(myOverlay);
-
-            //    winPhoneMapView.Layers.Add(myLayer);
-            //}
+                winPhoneMapView.Layers.Add(myLayer);
+            }
         }
     }
 
