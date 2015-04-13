@@ -120,6 +120,7 @@ namespace Xam.Plugin.MapExtend.WindowsPhone
                 MapOverlay myOverlay = new MapOverlay()
                 {
                     GeoCoordinate = markerWithIcon.GeoCoordinate,
+                    PositionOrigin = new System.Windows.Point(0.0, 1.0),
                     Content = markerWithIcon
                 };
 
