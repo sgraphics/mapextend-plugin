@@ -78,3 +78,12 @@ MapExtendRenderer.Init(applicationId, authToken);
 ### CODE
 
 //TODO: Create examples
+
+
+# Contributors
+
+[Lucio](https://github.com/LucioMSP)
+
+[James Montemagno](https://github.com/jamesmontemagno)
+
+[Pierce Boggan](https://github.com/pierceboggan)
