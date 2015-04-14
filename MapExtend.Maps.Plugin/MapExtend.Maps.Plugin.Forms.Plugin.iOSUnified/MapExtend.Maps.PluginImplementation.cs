@@ -40,7 +40,7 @@ namespace Xam.Plugin.MapExtend.iOSUnified
             {
                 ((System.Collections.ObjectModel.ObservableCollection<Xamarin.Forms.Maps.Pin>)formsMap.Pins).CollectionChanged += OnPinsCollectionChanged;
 
-                ((System.Collections.ObjectModel.ObservableCollection<Position>)formsMap.polilenes).CollectionChanged += OnPolCollectionChanged;
+                ((ObservableRangeCollection<Position>)formsMap.polilenes).CollectionChanged += OnPolCollectionChanged;
 
             }
         }

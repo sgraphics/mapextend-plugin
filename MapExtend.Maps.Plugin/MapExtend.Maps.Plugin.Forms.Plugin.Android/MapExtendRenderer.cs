@@ -21,7 +21,8 @@ namespace Xam.Plugin.MapExtend.Droid
         /// <summary>
         /// Used for registration with dependency service
         /// </summary>
-        public static void Init(Activity activity, Android.OS.Bundle bundle) {
+        public static void Init(Activity activity, Android.OS.Bundle bundle)
+        {
             FormsMaps.Init(activity, bundle);
         }
 
@@ -38,7 +39,7 @@ namespace Xam.Plugin.MapExtend.Droid
             {
                 ((System.Collections.ObjectModel.ObservableCollection<Xamarin.Forms.Maps.Pin>)formsMap.Pins).CollectionChanged += OnPinsCollectionChanged;
 
-                ((System.Collections.ObjectModel.ObservableCollection<Position>)formsMap.polilenes).CollectionChanged += OnPolCollectionChanged;
+                ((ObservableRangeCollection<Position>)formsMap.polilenes).CollectionChanged += OnPolCollectionChanged;
 
                 androidMapView.Map.MarkerDragEnd += Map_MarkerDragEnd;
                 androidMapView.Map.MapLongClick += (s, a) =>

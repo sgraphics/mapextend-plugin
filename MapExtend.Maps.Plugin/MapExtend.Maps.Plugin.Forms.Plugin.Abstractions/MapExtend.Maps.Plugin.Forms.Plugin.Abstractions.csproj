@@ -36,6 +36,7 @@
     <DocumentationFile>bin\Release\Xam.Plugin.MapExtend.Abstractions.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ObservableRangeCollection.cs" />
     <Compile Include="MapExtend.cs" />
     <Compile Include="Models\Places\Places.cs" />
     <Compile Include="Models\Routes\Routes.cs" />

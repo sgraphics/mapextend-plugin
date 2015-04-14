@@ -41,7 +41,7 @@ namespace Xam.Plugin.MapExtend.iOS
             {
                 ((System.Collections.ObjectModel.ObservableCollection<Xamarin.Forms.Maps.Pin>)formsMap.Pins).CollectionChanged += OnPinsCollectionChanged;
 
-                ((System.Collections.ObjectModel.ObservableCollection<Position>)formsMap.polilenes).CollectionChanged += OnPolCollectionChanged;
+                ((ObservableRangeCollection<Position>)formsMap.polilenes).CollectionChanged += OnPolCollectionChanged;
 
             }
         }
@@ -71,7 +71,6 @@ namespace Xam.Plugin.MapExtend.iOS
                     mkMapView.AddOverlay(line);
                     mkMapView.SetVisibleMapRect(line.BoundingMapRect, true);
                 }
-
 
             }
             catch (Exception e)

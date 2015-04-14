@@ -10,18 +10,19 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
+using System.ComponentModel;
 
 namespace Xam.Plugin.MapExtend.Abstractions
 {
     /// <summary>
     /// MapExtend.Maps.Plugin Interface
     /// </summary>
-    public class MapExtend : Map
+    public class MapExtend : Map, INotifyPropertyChanged
     {
         /// <summary>
         /// Property for create Polilenes in Map to Route
         /// </summary>
-        public ObservableCollection<Position> polilenes { get; set; }
+        public ObservableRangeCollection<Position> polilenes { get; set; }
 
         /// <summary>
         /// Constructor MapExtend
@@ -29,7 +30,7 @@ namespace Xam.Plugin.MapExtend.Abstractions
         public MapExtend()
             : base()
         {
-            polilenes = new ObservableCollection<Position>();
+            polilenes = new ObservableRangeCollection<Position>();
         }
 
         /// <summary>
@@ -39,7 +40,7 @@ namespace Xam.Plugin.MapExtend.Abstractions
         public MapExtend(MapSpan mapSpan)
             : base(mapSpan)
         {
-            polilenes = new ObservableCollection<Position>();
+            polilenes = new ObservableRangeCollection<Position>();
         }
 
 
@@ -66,6 +67,8 @@ namespace Xam.Plugin.MapExtend.Abstractions
 
         private IEnumerable<Position> Decode(string encodedPoints)
         {
+
+            
             if (string.IsNullOrEmpty(encodedPoints))
                 throw new ArgumentNullException("encodedPoints");
 
@@ -168,17 +171,28 @@ namespace Xam.Plugin.MapExtend.Abstractions
 
             var r = (await DownloadRoutes(x));
 
+            List<Position> lstPos = new List<Position>();
+
             var e = r.routes[0].legs[0].steps;
+
             foreach (var item in e)
             {
                 var polys = Decode(item.polyline.points);
                 foreach (var point in polys)
                 {
-                    Device.BeginInvokeOnMainThread(() => { this.polilenes.Add(point); });
+                    lstPos.Add(point);
+
                 }
-
-
             }
+            Device.BeginInvokeOnMainThread(() =>
+            {
+
+                this.polilenes.AddRange(lstPos);
+                
+            });
+
+
+
         }
 
         /// <summary>

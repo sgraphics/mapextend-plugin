@@ -42,7 +42,6 @@ namespace Xam.Plugin.MapExtend.WindowsPhone
             if (formsMap != null)
             {
                 ((System.Collections.ObjectModel.ObservableCollection<Xamarin.Forms.Maps.Pin>)formsMap.Pins).CollectionChanged += OnPinsCollectionChanged;
-
                 ((System.Collections.ObjectModel.ObservableCollection<Position>)formsMap.polilenes).CollectionChanged += OnPolCollectionChanged;
 
             }
