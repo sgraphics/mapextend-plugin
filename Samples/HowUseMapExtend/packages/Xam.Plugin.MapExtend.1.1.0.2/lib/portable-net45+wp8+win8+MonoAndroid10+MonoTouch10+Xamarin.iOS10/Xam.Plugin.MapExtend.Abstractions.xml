@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Xam.Plugin.MapExtend.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="M:Xam.Plugin.MapExtend.Abstractions.ObservableRangeCollection`1.AddRange(System.Collections.Generic.IEnumerable{`0})">
+            <summary> 
+            Adds the elements of the specified collection to the end of the ObservableCollection(Of T). 
+            </summary> 
+        </member>
+        <member name="M:Xam.Plugin.MapExtend.Abstractions.ObservableRangeCollection`1.RemoveRange(System.Collections.Generic.IEnumerable{`0})">
+            <summary> 
+            Removes the first occurence of each item in the specified collection from ObservableCollection(Of T). 
+            </summary> 
+        </member>
+        <member name="M:Xam.Plugin.MapExtend.Abstractions.ObservableRangeCollection`1.Replace(`0)">
+            <summary> 
+            Clears the current collection and replaces it with the specified item. 
+            </summary> 
+        </member>
+        <member name="M:Xam.Plugin.MapExtend.Abstractions.ObservableRangeCollection`1.ReplaceRange(System.Collections.Generic.IEnumerable{`0})">
+            <summary> 
+            Clears the current collection and replaces it with the specified collection. 
+            </summary> 
+        </member>
+        <member name="M:Xam.Plugin.MapExtend.Abstractions.ObservableRangeCollection`1.#ctor">
+            <summary> 
+            Initializes a new instance of the System.Collections.ObjectModel.ObservableCollection(Of T) class. 
+            </summary> 
+        </member>
+        <member name="M:Xam.Plugin.MapExtend.Abstractions.ObservableRangeCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary> 
+            Initializes a new instance of the System.Collections.ObjectModel.ObservableCollection(Of T) class that contains elements copied from the specified collection. 
+            </summary> 
+            <param name="collection">collection: The collection from which the elements are copied.</param> 
+            <exception cref="T:System.ArgumentNullException">The collection parameter cannot be null.</exception> 
+        </member>
+        <member name="T:Xam.Plugin.MapExtend.Abstractions.MapExtend">
+            <summary>
+            MapExtend.Maps.Plugin Interface
+            </summary>
+        </member>
+        <member name="M:Xam.Plugin.MapExtend.Abstractions.MapExtend.#ctor">
+            <summary>
+            Constructor MapExtend
+            </summary>
+        </member>
+        <member name="M:Xam.Plugin.MapExtend.Abstractions.MapExtend.#ctor(Xamarin.Forms.Maps.MapSpan)">
+            <summary>
+            Overload Contructor MapExtend
+            </summary>
+            <param name="mapSpan"></param>
+        </member>
+        <member name="M:Xam.Plugin.MapExtend.Abstractions.MapExtend.NearbyLocations(System.String,System.String)">
+            <summary>
+            Get Nearby Locals of Visible Region Of Map
+            </summary>
+            <param name="API_KEY">API KEY FROM GOOGLE PLACES API</param>
+        </member>
+        <member name="M:Xam.Plugin.MapExtend.Abstractions.MapExtend.CreateRoute(Xamarin.Forms.Maps.Position,Xamarin.Forms.Maps.Position)">
+            <summary>
+            Draw Route From Postion to another position
+            </summary>
+            <param name="From">Origin Position</param>
+            <param name="To">Destinate Position</param>
+            <returns></returns>
+        </member>
+        <member name="M:Xam.Plugin.MapExtend.Abstractions.MapExtend.SearchAdress(System.String)">
+            <summary>
+            Create Pin after find Location of Adress
+            </summary>
+            <param name="Adresss">Adress</param>
+            <returns></returns>
+        </member>
+        <member name="P:Xam.Plugin.MapExtend.Abstractions.MapExtend.polilenes">
+            <summary>
+            Property for create Polilenes in Map to Route
+            </summary>
+        </member>
+    </members>
+</doc>

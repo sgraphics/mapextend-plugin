@@ -166,33 +166,23 @@ namespace Xam.Plugin.MapExtend.Abstractions
         /// <returns></returns>
         public async Task CreateRoute(Position From, Position To)
         {
-
             var x = getMapsApiDirectionsUrl(From, To);
 
             var r = (await DownloadRoutes(x));
 
-            List<Position> lstPos = new List<Position>();
+            var lstPos = new List<Position>();
 
             var e = r.routes[0].legs[0].steps;
 
-            foreach (var item in e)
+            foreach (var polys in e.Select(item => Decode(item.polyline.points)))
             {
-                var polys = Decode(item.polyline.points);
-                foreach (var point in polys)
-                {
-                    lstPos.Add(point);
-
-                }
+                lstPos.AddRange(polys);
             }
+
             Device.BeginInvokeOnMainThread(() =>
             {
-
-                this.polilenes.AddRange(lstPos);
-                
+                polilenes.AddRange(lstPos);
             });
-
-
-
         }
 
         /// <summary>
