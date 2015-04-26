@@ -24,13 +24,13 @@ namespace HowUseMapExtend
 
             var entryEnd = new Entry
             {
-                Placeholder = "Adress",
+                Placeholder = "Address",
                 HorizontalOptions = LayoutOptions.FillAndExpand
             };
 
             var btnSearch = new Button
             {
-                Text = "P",
+                Text = "Add",
                 BackgroundColor = Color.Transparent,
                 BorderColor = Color.Transparent
             };
@@ -54,13 +54,12 @@ namespace HowUseMapExtend
                     var d = t;
                 });
 
+                entryEnd.Text = string.Empty;
+                entryEnd.Unfocus();
             };
 
             barItens.Children.Add(entryEnd);
             barItens.Children.Add(btnSearch);
-            var stack = new StackLayout { Spacing = 0 };
-            stack.Children.Add(barItens);
-            stack.Children.Add(map);
 
             btnCreateRoute.Clicked += async (sender, args) =>
             {
@@ -69,9 +68,8 @@ namespace HowUseMapExtend
                     var d = t;
                 });
             };
-            stack.Children.Add(btnCreateRoute);
 
-            var btnNearbyLocation = new Button()
+            var btnNearbyLocation = new Button
             {
                 Text = "Nearby Pleaces"
             };
@@ -85,7 +83,11 @@ namespace HowUseMapExtend
 
             };
 
-            stack.Children.Add(btnNearbyLocation);
+            var stack = new StackLayout
+            {
+                Spacing = 0,
+                Children = { barItens, map, btnCreateRoute, btnNearbyLocation }
+            };
 
             var locator = CrossGeolocator.Current;
 
@@ -103,7 +105,8 @@ namespace HowUseMapExtend
                 }
                 else
                 {
-                    var currentLocation = new Xamarin.Forms.Maps.Position(t.Result.Latitude, t.Result.Longitude);
+                    var currentLocation = new Position(t.Result.Latitude, t.Result.Longitude);
+
                     Device.BeginInvokeOnMainThread(() =>
                     {
                         map.MoveToRegion(MapSpan.FromCenterAndRadius(currentLocation, Xamarin.Forms.Maps.Distance.FromMiles(0.5)));
@@ -115,6 +118,7 @@ namespace HowUseMapExtend
             // The root page of your application
             MainPage = new ContentPage
             {
+                Padding = new Thickness(5, Device.OnPlatform(20, 5, 5), 5, 5),
                 Content = stack
             };
         }
