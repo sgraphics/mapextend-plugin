@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
        <id>Xam.Plugin.MapExtend</id>
-       <version>1.1.0.0</version>
+       <version>1.2.0.0</version>
        <title>MapExtend plugin for Xamarin.Forms</title>
        <authors>Rafael Rodrigues Moura</authors>
        <owners>Rafael Rodrigues Moura</owners>
@@ -15,15 +15,17 @@
        </summary>
        <description>
 	   
-	   ###BUGS###
+	    MapExtend for Xamarin.Forms is a plugin for Xamarin.Forms 
+		allowing users to draw routes, reveal nearby locations, distance between two points
+		and place pins at certain addresses.
 	   
+	   ###BUGS###
+	   Draw Route iOS - Fixed
 	   
 	   ###Improvements###
 	   Draw Route is Fast
-	   
-        MapExtend for Xamarin.Forms is a plugin for Xamarin.Forms 
-		allowing users to draw routes, reveal nearby locations, 
-		and place pins at certain addresses.
+	   Get distance between two points
+        
        </description>
        <tags>xamarin, xamarin.forms, android, ios, windows phone, maps, map</tags>
        <dependencies>
