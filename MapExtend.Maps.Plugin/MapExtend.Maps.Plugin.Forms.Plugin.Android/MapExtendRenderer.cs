@@ -34,7 +34,6 @@ namespace Xam.Plugin.MapExtend.Droid
             var androidMapView = (Android.Gms.Maps.MapView)Control;
 
 
-
             if (formsMap != null)
             {
                 ((System.Collections.ObjectModel.ObservableCollection<Xamarin.Forms.Maps.Pin>)formsMap.Pins).CollectionChanged += OnPinsCollectionChanged;
@@ -95,27 +94,27 @@ namespace Xam.Plugin.MapExtend.Droid
 
         private void updatePins()
         {
-            var androidMapView = (MapView)Control;
-            var formsMap = (Xam.Plugin.MapExtend.Abstractions.MapExtend)Element;
+			//var androidMapView = (MapView)Control;
+			//var formsMap = (Xam.Plugin.MapExtend.Abstractions.MapExtend)Element;
 
-            androidMapView.Map.Clear();
-
-
-            androidMapView.Map.MyLocationEnabled = formsMap.IsShowingUser;
+			//androidMapView.Map.Clear();
 
 
-            var items = formsMap.Pins;
+			//androidMapView.Map.MyLocationEnabled = formsMap.IsShowingUser;
 
-            foreach (var item in items)
-            {
-                var markerWithIcon = new MarkerOptions();
-                markerWithIcon.SetPosition(new LatLng(item.Position.Latitude, item.Position.Longitude));
-                markerWithIcon.SetTitle(string.IsNullOrWhiteSpace(item.Label) ? "-" : item.Label);
 
-                markerWithIcon.Draggable(true);
+			//var items = formsMap.Pins;
 
-                androidMapView.Map.AddMarker(markerWithIcon);
-            }
+			//foreach (var item in items)
+			//{
+			//	var markerWithIcon = new MarkerOptions();
+			//	markerWithIcon.SetPosition(new LatLng(item.Position.Latitude, item.Position.Longitude));
+			//	markerWithIcon.SetTitle(string.IsNullOrWhiteSpace(item.Label) ? "-" : item.Label);
+
+			//	markerWithIcon.Draggable(true);
+
+			//	androidMapView.Map.AddMarker(markerWithIcon);
+			//}
         }
     }
 }

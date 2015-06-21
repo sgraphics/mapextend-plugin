@@ -91,42 +91,43 @@ namespace Xam.Plugin.MapExtend.WindowsPhone
 
         private void updatePins()
         {
-            var winPhoneMapView = Control;
-            var formsMap = (Xam.Plugin.MapExtend.Abstractions.MapExtend)Element;
+			//var winPhoneMapView = Control;
+			//var formsMap = (Xam.Plugin.MapExtend.Abstractions.MapExtend)Element;
 
-            var items = formsMap.Pins;
-            var toRemove = new List<MapLayer>();
-            foreach (var item in winPhoneMapView.Layers)
-            {
-                if (item.Count > 0)
-                    if (item[0].Content is Pushpin)
-                        toRemove.Add(item);
-            }
-            foreach (var item in toRemove)
-            {
-                winPhoneMapView.Layers.Remove(item);
-            }
+			//var items = formsMap.Pins;
+			//var toRemove = new List<MapLayer>();
+			//foreach (var item in winPhoneMapView.Layers)
+			//{
+			//	if (item.Count > 0)
+			//		if (item[0].Content is Pushpin)
+			//			toRemove.Add(item);
+			//}
+			//foreach (var item in toRemove)
+			//{
+			//	winPhoneMapView.Layers.Remove(item);
+			//}
 
-            foreach (var item in items)
-            {
-                MapLayer myLayer = new MapLayer();
-                var markerWithIcon = new Pushpin();
-                markerWithIcon.GeoCoordinate = new GeoCoordinate(item.Position.Latitude, item.Position.Longitude);
-                markerWithIcon.Content = (string.IsNullOrWhiteSpace(item.Label) ? "-" : item.Label);
+			//foreach (var item in items)
+			//{
+			//	MapLayer myLayer = new MapLayer();
+			//	var markerWithIcon = new Pushpin();
+			//	markerWithIcon.GeoCoordinate = new GeoCoordinate(item.Position.Latitude, item.Position.Longitude);
+				
+			//	markerWithIcon.Content = (string.IsNullOrWhiteSpace(item.Label) ? "-" : item.Label);
 
-                //markerWithIcon.AllowDrop = true;
+			//	//markerWithIcon.AllowDrop = true;
 
-                MapOverlay myOverlay = new MapOverlay()
-                {
-                    GeoCoordinate = markerWithIcon.GeoCoordinate,
-                    PositionOrigin = new System.Windows.Point(0.0, 1.0),
-                    Content = markerWithIcon
-                };
+			//	MapOverlay myOverlay = new MapOverlay()
+			//	{
+			//		GeoCoordinate = markerWithIcon.GeoCoordinate,
+			//		PositionOrigin = new System.Windows.Point(0.0, 1.0),
+			//		Content = markerWithIcon
+			//	};
 
-                myLayer.Add(myOverlay);
+			//	myLayer.Add(myOverlay);
 
-                winPhoneMapView.Layers.Add(myLayer);
-            }
+			//	winPhoneMapView.Layers.Add(myLayer);
+			//}
         }
     }
 
